@@ -1,6 +1,5 @@
 HackRank Java Solutions
-
-===
+---
 
 This is my solutions for some of the HackerRank problem.
 
