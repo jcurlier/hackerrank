@@ -1,4 +1,4 @@
-HackRank Java Solutions
+HackRank Solutions
 ---
 
 This is my solutions for some of the HackerRank problem.
