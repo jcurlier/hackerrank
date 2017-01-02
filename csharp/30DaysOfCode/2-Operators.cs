@@ -24,6 +24,4 @@ class Solution
         int totalCost = (int) Math.Round(mealCost + tip + tax, 0);
         Console.WriteLine($"The total meal cost is {totalCost} dollars.");
     }
-    
-    
 }
