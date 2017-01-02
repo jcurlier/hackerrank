@@ -2,22 +2,33 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-class Solution {
 
-    static void Main(String[] args) {
-        
-        int N = Convert.ToInt32(Console.ReadLine());
+static class Solution 
+{
+    static void Main(String[] args) 
+    {
+       int N = Convert.ToInt32(Console.ReadLine());
+       Console.WriteLine((N.IsWeird())?"Weird":"Not Weird");
+    }
+
+    static bool IsWeird(this int n)
+    {
         bool isWeird = false;
         
-        if (N % 2 != 0) 
+        if (IsOdd(n)) 
         {
             isWeird = true;   
         }
-        else if (N >= 6 && N <= 20) 
+        else if (n >= 6 && n <= 20) 
         {
             isWeird = true;    
         }
         
-        Console.WriteLine((isWeird)?"Weird":"Not Weird");
+        return isWeird;
+    }
+    
+    static bool IsOdd(this int n)
+    {
+        return (n % 2 != 0);
     }
 }
